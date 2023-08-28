@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: strava_data
+    description: This table has information about my data in strava
+
+    columns:
+      - name: name
+        description: This is a unique identifier for a ride
+
+      - name: start_date
+        description: Start date for a ride
+
+      - name: distance
+        description: Distance of a ride
+
+      - name: total_elevation_gain
+        description: Total elevation of a ride
+
+      - name: average_speed
+        description: Average speed of a ride
+
+      - name: max_speed
+        description: Maximum speed of a ride
+
+      - name: moving_time
+        description: Moving time of a ride
+      
+      - name: gear_id
+        description: Biclycle used for a ride
+
+      - name: map
+        description: Map for a ride
