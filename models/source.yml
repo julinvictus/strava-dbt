@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: strava_data
+    database: fivetran_database
+    schema: s3
+    tables:
+      - name: strava_data

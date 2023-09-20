@@ -1,4 +1,10 @@
-with strava_data as (
+with 
+
+source as (
+  select * from {{ source('strava_data', 'strava_data')}}
+),
+
+strava_data_modified as (
   select 
     name, 
     start_date,
@@ -13,7 +19,7 @@ with strava_data as (
 ),
 
 final as (
-  select * from strava_data
+  select * from strava_data_modified
   where type='Ride'
 )
 
